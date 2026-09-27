@@ -1,0 +1,69 @@
+{
+  "sections": {
+    "hero": {
+      "type": "cub4-hero",
+      "settings": {}
+    },
+    "departments": {
+      "type": "cub4-departments",
+      "blocks": {
+        "d0": {
+          "type": "department",
+          "settings": {}
+        },
+        "d1": {
+          "type": "department",
+          "settings": {}
+        },
+        "d2": {
+          "type": "department",
+          "settings": {}
+        },
+        "d3": {
+          "type": "department",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "d0",
+        "d1",
+        "d2",
+        "d3"
+      ],
+      "settings": {}
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Explore nossos produtos",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "swipe_on_mobile": false,
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "padding_top": 48,
+        "padding_bottom": 64
+      }
+    }
+  },
+  "order": [
+    "hero",
+    "departments",
+    "featured_collection"
+  ]
+}

@@ -1,0 +1,26 @@
+cub4 Commerce 1.0.1 — tema Shopify para cub4Studio
+
+INSTALAÇÃO
+1. No admin Shopify, abra Loja virtual > Temas > Adicionar tema > Importar arquivo ZIP (o nome pode variar).
+2. Envie cub4-commerce-shopify.zip diretamente, sem descompactar.
+3. Abra Personalizar no tema importado; mantenha seu tema atual publicado até terminar os testes.
+4. Em Configurações do tema > cub4Studio, ajuste o nome da loja e o símbolo. Uma logo enviada na configuração nativa de logo substitui esse cabeçalho padrão.
+5. Na página inicial, edite “cub4 · Vitrine principal”. Troque título, texto, botão e imagem. Sem imagem, aparece a arte com o símbolo oficial.
+6. Em “cub4 · Departamentos”, selecione uma coleção em cada bloco. Blocos sem coleção mostram instruções apenas no editor e ficam ocultos na loja. Remova a seção se não for usá-la.
+7. Em “Explore nossos produtos”, escolha a coleção e quantidade. Cadastre os produtos na Shopify/DSers: o ZIP não importa produtos nem fornecedores.
+8. Configure os menus main-menu e footer, políticas, contato, idiomas e mercados no admin. O texto editorial inicial está em PT-BR; adapte a PT-PT se necessário. Os componentes nativos incluem traduções do Dawn.
+9. Confirme frete, pagamento, estoque e vínculos DSers. Esses recursos pertencem à loja, não ao tema.
+10. Pré-visualize no celular e desktop. Teste busca, filtro, variante disponível/indisponível, adicionar ao carrinho, quantidade, remoção e checkout com pedido de teste. Só depois publique.
+
+O QUE FOI ADAPTADO
+Identidade de cub4Studio no commit 9d6b3f2: roxo #0D0817 / #2A1444, coral #E8583F, coral claro #FF9478, pêssego #F6C5B6 e símbolo original. Não altera o site institucional.
+Base funcional: Shopify Dawn commit 258f00f (16.0.0), com licença preservada em cub4-dawn-license.txt. Mantidos recursos de produtos, variantes, busca, filtros, carrinho, contas, páginas, blog, localização e blocos de aplicativos.
+Seções novas: cub4-hero.liquid e cub4-departments.liquid. Estilos: cub4.css. Tipografia usa fontes configuráveis do Dawn; a fonte exata do site institucional não foi incorporada.
+Não foram incluídos depoimentos, vendas, promoções ou prazos fictícios. O nome cub4Shop não foi adotado automaticamente.
+
+VALIDAÇÃO E LIMITES
+Shopify CLI Theme Check: zero erros; nove avisos nos arquivos herdados do Dawn (complexidade, variáveis e snippet). Não houve validação dentro de uma loja autenticada nem compra real. A aparência final depende das imagens, textos, produtos e coleções configurados no editor. Não há alegação de aprovação pela Shopify Theme Store.
+O ZIP não configura pagamento, frete, impostos, políticas, pixel Meta, consentimento nem aplicativos. O checkout permanece gerenciado pela Shopify.
+
+CORREÇÃO 1.0.1
+Largura de 1300 px e espaçamento de cabeçalho de 16 px compatíveis com os intervalos do schema. Opção de animação corrigida para default. Verificados valores range/select dos templates e configuração global. Valores de reserva para escala-base e largura. Importe como outro tema, abra Personalizar e confira antes de publicar. Não é preciso reimportar produtos.
