@@ -1,7 +1,18 @@
+{%- liquid
+  assign has_departments = false
+  for block in section.blocks
+    if block.settings.collection != blank
+      assign has_departments = true
+    endif
+  endfor
+-%}
+{% if has_departments or request.design_mode %}
 <section class="page-width cub4-departments"><div class="cub4-section-heading"><div><p class="cub4-eyebrow">{{ section.settings.eyebrow | escape }}</p><h2>{{ section.settings.title | escape }}</h2></div><a class="link" href="{{ routes.collections_url }}">{{ section.settings.link_label | escape }} <span aria-hidden="true">↗</span></a></div><div class="cub4-department-grid">
 {% for block in section.blocks %}{% assign category = block.settings.collection %}{% if category != blank %}<a class="cub4-department" href="{{ category.url }}" {{ block.shopify_attributes }}>
 {% assign category_image = block.settings.image | default: category.featured_image %}{% if category_image != blank %}{{ category_image | image_url: width: 600 | image_tag: loading: 'lazy', widths: '250, 400, 600', sizes: '(min-width: 990px) 22vw, 45vw' }}{% else %}{{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}{% endif %}<span>{{ block.settings.title | default: category.title | escape }} <b aria-hidden="true">↗</b></span></a>{% elsif request.design_mode %}<div class="cub4-department cub4-empty" {{ block.shopify_attributes }}><p>Selecione uma coleção neste bloco.</p></div>{% endif %}{% endfor %}
-</div></section>{% schema %}
+</div></section>
+{% endif %}
+{% schema %}
 {
   "name": "cub4 · Departamentos",
   "settings": [

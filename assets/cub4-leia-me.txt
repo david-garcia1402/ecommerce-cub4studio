@@ -1,4 +1,4 @@
-cub4 Commerce 1.0.1 — tema Shopify para cub4Studio
+cub4 Commerce 1.0.2 — tema Shopify para cub4Studio
 
 INSTALAÇÃO
 1. No admin Shopify, abra Loja virtual > Temas > Adicionar tema > Importar arquivo ZIP (o nome pode variar).
@@ -24,3 +24,6 @@ O ZIP não configura pagamento, frete, impostos, políticas, pixel Meta, consent
 
 CORREÇÃO 1.0.1
 Largura de 1300 px e espaçamento de cabeçalho de 16 px compatíveis com os intervalos do schema. Opção de animação corrigida para default. Verificados valores range/select dos templates e configuração global. Valores de reserva para escala-base e largura. Importe como outro tema, abra Personalizar e confira antes de publicar. Não é preciso reimportar produtos.
+
+ATUALIZAÇÃO 1.0.2
+Catálogo automático quando nenhuma coleção é selecionada (opção desativável). Coleções escolhidas são respeitadas. Vitrines vazias e departamentos não configurados ficam ocultos para visitantes; placeholders continuam disponíveis no editor. O README do repositório explica importação, GitHub e novos produtos.
